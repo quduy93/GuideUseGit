@@ -1,0 +1,31 @@
+Các bước Tạo 1 Repositories
+1. Tạo Repositories trên web GitHub https://github.com/quduy93/Init
+2. Tạo folder Init
+3. Chuột phải folder -> Git Bash Here -> git init
+4. Add file vào folder Init
+5. Kiểm tra status : git status
+6. git add <file>   (file không cần push : git reset <file> )
+7. git commit -m "first commit"
+8. git remote add origin https://github.com/quduy93/Init.git
+9. git push -u origin master
+10. Check https://github.com/quduy93/Init.git xem có file cần push lên chưa ???
+
+Nhánh
+Chuyển đổi qua lại giữa các branch để làm việc: git checkout <other_branch>
+Tạo branch mới và chuyển sang luôn branch ấy để làm việc: git checkout -b <new_branch>
+Để tạo một branch mới trong Git : git branch <new_branch>
+repository của bạn có những branch nào và hiện tại bạn đang làm việc tại nhánh nào : git branch -a
+
+Delete Repositories
+1. Goto Your Repositories
+2. Select tab Settings
+3. Goto Group Danger Zone
+4. Select button Delete this repositories
+5. input text chữ in đậm tại line có dòng "Please type ... confirm vào ô textbox
+6. Nhấn button "I understand ... repositories
+
+Merge file : 
+1. Đang ở Branch Develope 
+2. Get source mới nhất từ Git server : git pull origin master cho Branch Develope
+3. Tại Branch Develope Get source mới nhất từ Git Server cho Branch master : git pull https://github.com/quduy93/Init master
+4. Get source mới nhất từ Git server : git pull origin master cho nhánh master
