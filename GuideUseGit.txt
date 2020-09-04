@@ -5,7 +5,7 @@ Các bước Tạo 1 Repositories
 4. Add file vào folder Init
 5. Kiểm tra status : git status
 6. git add <file>   (file không cần push : git reset <file> )
-7. git commit -m "first commit"
+7. git commit -m "first commit" ( Commit file rác:  git restore --source=HEAD^ --staged  -- file rác )
 8. git remote add origin https://github.com/quduy93/Init.git
 9. git push -u origin master
 10. Check https://github.com/quduy93/Init.git xem có file cần push lên chưa ???
