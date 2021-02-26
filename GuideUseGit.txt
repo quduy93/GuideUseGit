@@ -31,3 +31,4 @@ Merge file :
 4. Get source mới nhất từ Git server : git pull origin master cho nhánh master
 
 nhanh dev1 thuc hien
+nhanh dev2 thuc hien
