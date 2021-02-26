@@ -1,0 +1,23 @@
+
+File : GuideAddFile.txt
+Nhánh dev1 : $ git status
+           : $ git add GuideAddFile.txt
+           : $ git commit -m "Guide Add file"
+           : $ git push
+Nhánh master : $ git checkout master
+             : $ git status
+             : $ git add GuideAddFile.txt
+             : $ git commit -m "Guide Add file master"
+             : $ git push
+Nhánh dev2 : $ git checkout dev2
+           : $ git pull https://github.com/quduy93/GuideUseGit master
+
+
+
+
+
+
+
+
+
+
