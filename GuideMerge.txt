@@ -1,0 +1,32 @@
+HƯỚNG DẪN MERGE NHÁNH DEV1 VS DEV2 INTO MASTER
+1.   clone source từ nhánh master                            : $ git clone https://github.com/quduy93/GuideUseGit
+2.1. tạo 2 nhánh dev1                                        :  $ git checkout -b dev1  -> tạo nhánh và chuyển đến nhánh dev1
+2.2. thực hiện update file trên nhánh dev1
+2.3. kiểm tra những file đã update muốn push lên nhánh dev1  : $ git status
+2.4. add file update để chuẩn bị commit lên dev1             : $ git add <file update>
+2.5. Commit lên dev1                                         : $ git commit -m "Nhanh dev1"
+2.6. Push file lên nhánh dev1                                : $ git push --set-upstream origin dev1
+3.   Thực hiện các bước tương tự như 2 nhưng ở nhánh dev2
+4.   Thực hiện merge 2 nhánh dev1, dev2 vào nhánh master
+4.1. Chuyển về nhánh master 				     : $ git checkout master
+4.2. thực hiện merge nhánh dev1			             : $ git merge dev1
+4.3. thực hiệm merge nhánh dev2			             : $ git merge dev2   
+=> sẽ hiện ra thông báo 
+   Auto-merging <file update>
+   CONFLICT (content): Merge conflict in <file update>
+   Automatic merge failed; fix conflicts and then commit the result.
+4.4. tại nhánh master sẽ mở file udpate đã bị conflic -> thực hiện merge bằng tay
+4.5. kiểm tra những file đã update muốn push lên nhánh master : $ git status
+4.6. add file update để chuẩn bị commit lên master            : $ git add <file update>
+4.5. Commit lên master                                        : $ git commit -m "Nhanh master
+4.6. Push file lên nhánh master                               : $ git push --set-upstream origin master
+5.   Pull source từ nhánh master về dev1, dev2
+5.1. Chuyển về nhánh dev1				      : $ git checkout dev1
+5.2. Pull source từ master về dev1                            : $ git pull https://github.com/quduy93/GuideUseGit master
+5.3. Check kết quả thực hiện 	                              : kiểm tra kết quả giữa master và dev1 có giống nhau về nội dung ?
+5.4. Thực hiện tương tự từ 5.1 -> 5.3 cho nhánh dev2
+
+     
+					
+
+
