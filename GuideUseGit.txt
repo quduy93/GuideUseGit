@@ -30,5 +30,5 @@ Merge file :
 3. Tại Branch Develope Get source mới nhất từ Git Server cho Branch master : git pull https://github.com/quduy93/Init master
 4. Get source mới nhất từ Git server : git pull origin master cho nhánh master
 
-nhanh dev1 thuc hien
+nhanh dev1 thuc hien 26/02/2021
 nhanh dev2 thuc hien
